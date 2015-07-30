@@ -5,7 +5,7 @@
   "main": "./lib/unity-ui",
   "private": false,
   "description": "An Atom theme for a more native experience on OS X.",
-  "repository": "https://github.com/binhsonnguyen/yosemite-ui.git",
+  "repository": "https://github.com/binhsonnguyen/yosemate-ui.git",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
