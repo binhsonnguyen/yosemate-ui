@@ -1,4 +1,4 @@
-# Yosemite UI
+# Yosemate UI
 
 Forked with love from @unity-ui by Mr. Steve Smith - orderedlist. I just want to make it more personal.
 
