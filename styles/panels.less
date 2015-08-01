@@ -9,20 +9,20 @@ atom-panel {
   position: relative;
 
   &.top {
-    background:@pane-item-background-color;
+    background: @pane-item-background-color;
   }
 
   &.left {
     border-right: 1px solid @tool-panel-border-color;
-    background:@pane-item-background-color;
+    background: @pane-item-background-color;
   }
   &.right {
     border-left: 1px solid @tool-panel-border-color;
-    background:@pane-item-background-color;
+    background: @pane-item-background-color;
   }
   &.bottom {
     border-top: 1px solid @tool-panel-border-color;
-    background:@pane-item-background-color;
+    background: @pane-item-background-color;
   }
 }
 
@@ -42,32 +42,41 @@ atom-panel {
   border-top: 1px solid fade(@panel-heading-border-color, 50%);
   border-bottom: 1px solid @panel-heading-border-color;
   background-color: @panel-heading-background-color;
-  font-weight:500;
+  font-weight: 500;
 
   &:first-of-type {
-    border-top:none;
+    border-top: none;
   }
 }
 
 .status-bar {
   color: fadeout(@text-color-highlight, 30%);
-  height:26px;
-  line-height:23px;
-  padding:0;
-  background:linear-gradient(#e4e4e4, #d8d8d8);
-  border-color:#a1a1a1;
+  font-family: @font-family-alternative;
+  font-size: @font-size - 2;
+  font-weight: bold;
+  height: 17px;
+  line-height: 14px;
+  padding: 0;
+  background: linear-gradient(#dbdbdb, #d8d8d8);
+  border-color: #a1a1a1;
 
   .status-bar-left {
-    margin-left:@component-padding;
+    margin-left: @component-padding;
   }
 
   .status-bar-right {
-    margin-right:@component-padding;
+    margin-right: @component-padding;
+  }
+}
+
+.is-blurred & {
+  .status-bar {
+    background: #F6F6F6;
   }
 }
 
 .find-and-replace .find-meta-container {
-  margin-top:3px;
-  font-size:1em;
-  color:@text-color-subtle;
+  margin-top: 3px;
+  font-size: 1em;
+  color: @text-color-subtle;
 }

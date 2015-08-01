@@ -1,6 +1,5 @@
 .tab-bar {
   border-bottom:1px solid @tab-bar-border-color;
-  font-size:@font-size - 1;
   height:24px;
   background:linear-gradient(@tab-background-color, @tab-background-color-vibrate);
   display:table;
@@ -10,7 +9,8 @@
   -webkit-transform:scale(1);
 
   .tab {
-    font-size:@font-size;
+    font-size:@font-size -1;
+    font-weight: 400;
     width:100%;
     box-sizing:border-box;
     padding:0 20px!important;
@@ -44,7 +44,7 @@
 
   .tab.active,
   .tab:hover.active {
-    color:#202020;
+    color:#000;
     background:@tab-background-color-active;
     border-width:1px 0 1px 1px;
     border-top-color:@tab-background-color-active;
