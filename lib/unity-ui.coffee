@@ -19,15 +19,15 @@ module.exports =
       default: false
 
   activate: (state) ->
-    atom.config.observe 'unity-ui.showIcons', ->
+    atom.config.observe 'yosemate-ui.showIcons', ->
       body = document.body
-      if atom.config.get('unity-ui.showIcons')
+      if atom.config.get('yosemate-ui.showIcons')
         addClass(body, 'unity-ui-show-icons')
       else
         removeClass(body, 'unity-ui-show-icons')
-    atom.config.observe 'unity-ui.colorStatusIndicatorsInTreeView', ->
+    atom.config.observe 'yosemate-ui.colorStatusIndicatorsInTreeView', ->
       treeView = document.querySelector('.tree-view')
-      if atom.config.get('unity-ui.colorStatusIndicatorsInTreeView')
+      if atom.config.get('yosemate-ui.colorStatusIndicatorsInTreeView')
         removeClass(treeView, 'unity-ui-fade-status')
       else
         addClass(treeView, 'unity-ui-fade-status')
